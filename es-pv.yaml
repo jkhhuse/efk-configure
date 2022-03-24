@@ -1,0 +1,44 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: es-pv1
+  labels:
+    type: local
+spec:
+  storageClassName: es-storage
+  accessModes:
+    - ReadWriteOnce
+  capacity:
+    storage: 100Gi
+  hostPath:
+    path: "/es/data1"
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: es-pv1
+  labels:
+    type: local
+spec:
+  storageClassName: es-storage
+  accessModes:
+    - ReadWriteOnce
+  capacity:
+    storage: 100Gi
+  hostPath:
+    path: "/es/data1"
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: es-pv3
+  labels:
+    type: local
+spec:
+  storageClassName: es-storage
+  accessModes:
+    - ReadWriteOnce
+  capacity:
+    storage: 100Gi
+  hostPath:
+    path: "/es/data3"
